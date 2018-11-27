@@ -28,11 +28,6 @@ log.error("something went horribly wrong", field("definitely?", true))
 log.info("multiple fields", field("field1", "value1"), field("field2", 2))
 ```
 
-## Future Features
-
-* Color Output
-* Non structured log messages
-
 ## Contributing
 
 Please feel free to open a PR!
