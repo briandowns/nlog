@@ -10,6 +10,9 @@ srcDir = "src"
 task test, "Runs the test suite":
     exec "nim c -r tests/tester"
 
+task docs, "Build documentation":
+    exec "nim doc --index:on -o:docs/nlog.html src/nlog.nim"
+
 before install:
     echo "building..."
     exec("nim c src/nlog.nim")
